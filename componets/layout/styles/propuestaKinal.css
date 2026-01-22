@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F4F6F7;
+    color: #333;
+}
+
+.main-header {
+    background: #0A3D62;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.logo span {
+    color: #F39C12;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background: #F39C12;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #000;
+}
+
+.hero {
+    height: 100vh;
+    background: url("../images/kinal2.jpeg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(10, 61, 98, 0.85),
+        rgba(10, 61, 98, 0.85)
+    );
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.btn-primary {
+    background: #F39C12;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* PROGRAMAS */
+.programs {
+    padding: 90px 40px;
+    text-align: center;
+}
+
+.programs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destacado {
+    border: 3px solid #F39C12;
+}
+
+.about {
+    background: #0A3D62;
+    color: white;
+    padding: 80px 40px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: #0F4C75;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.about-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.explicacion-redisenio {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+}
